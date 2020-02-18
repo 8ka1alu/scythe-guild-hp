@@ -12,11 +12,19 @@ background-attachment: fixed;
 	background-color: aqua;
 }
 .ham_line {
-	position: absolute;
-	left: 10px;
-	width: 20px;
-	height: 1px;
-	background-color: #333333;
+	transition: all 0.3s;
+}
+
+.clicked .ham_line1 {
+	transform: rotate(45deg);
+	top: 20px;
+}
+.clicked .ham_line2 {
+	width: 0px;
+}
+.clicked .ham_line3 {
+	transform: rotate(-45deg);
+	top: 20px;
 }
 .ham_line1 {
 	top: 10px;
