@@ -4,105 +4,26 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 }
 
-/****メニュー全体****/
-#menu{
-	/*配置*/
+.ham {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: aqua;
+}
+.ham_line {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	pointer-events: none;
-	z-index: 100;
+	left: 10px;
+	width: 20px;
+	height: 1px;
+	background-color: #333333;
 }
-
-/****メニュー開閉ボタン****/
-#menu div{
-	/*デザイン*/
-	width: 30px;
-	height: 30px;
-	background: rgba(200,200,200,1);
-	/*配置*/
-	overflow: hidden;
-	position: absolute;
-	right: 0;
+.ham_line1 {
+	top: 10px;
 }
-
-#menu .menuopen{
-	/*デザイン*/
-	color: rgba(255,255,255,1);
-	font-size: 20px;
-	/*配置*/
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: auto;
+.ham_line2 {
+	top: 18px;
 }
-
-#menu .menuclose{
-	/*デザイン*/
-	color: rgba(255,255,255,1);
-	font-size: 20px;
-	/*配置*/
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: auto;
-}
-
-/****メニュー一覧****/
-#menu ul{
-	/*デザイン*/
-	background: rgba(200,200,200,1);
-	width: 80%;
-	/*配置*/
-	position: absolute;
-	top: 30px;/*#menu divの高さ*/
-	right: 0;
-	display: none;
-}
-
-#menu li{
-	/*デザイン*/
-	padding: 10px;
-	color: rgba(0,0,0,1);
-	border-bottom: 1px rgba(255,255,255,1) solid;
-	/*配置*/
-	pointer-events: auto;
-}
-
-/****メニューオープン時****/
-#menu:target .menuopen{
-	/*配置*/
-	display: none;
-}
-
-#menu:target .menuclose{
-	/*配置*/
-	display: block;
-}
-
-#menu:target ul{
-	/*配置*/
-	display: block;
-}
-
-/*** メインエフェクト ***/
-#main{
-	/*アニメーション*/
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
-
-#menu:target ~ #main{
-	-webkit-filter:blur(1px);
-	-moz-filter:blur(1px);
-	-ms-filter:blur(1px);
-	filter:blur(1px);
+.ham_line3 {
+	top: 26px;
 }
