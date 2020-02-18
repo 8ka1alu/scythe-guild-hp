@@ -35,3 +35,14 @@ background-attachment: fixed;
 .ham_line3 {
 	top: 26px;
 }
+.menu {
+	position: fixed;
+	width: 300px;
+	height: 300px;
+	left: -400px;
+	background-color: aquamarine;
+	transition: all 0.3s;
+}
+.clicked .menu {
+	left: 8px;
+}
