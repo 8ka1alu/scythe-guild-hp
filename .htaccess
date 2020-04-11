@@ -1,4 +1,4 @@
 AuthType     Basic
 AuthName     "Scythe Builder"
-AuthUserFile [.htpasswdファイルの場所]
+AuthUserFile /.htpasswd
 require valid-user
