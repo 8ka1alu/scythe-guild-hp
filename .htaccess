@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Scythe Builder"
-AuthUserFile /app/.htpasswd
+AuthUserFile https://github.com/8ka1alu/scythe-guild-hp/blob/master/.htpasswd 
 require valid-user
