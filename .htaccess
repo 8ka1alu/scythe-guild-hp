@@ -1,4 +1,4 @@
+AuthUserFile /.htpasswd
 AuthType Basic
-AuthName "Scythe Builder"
-AuthUserFile /.htpasswd 
+AuthName "Restricted Access"
 Require valid-user
