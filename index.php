@@ -1,6 +1,7 @@
 <?php
 
-header('Location: /HTML/index.html');
+header('Location: /index.html');
 
-header('Location: /HTML/index2.html');
+header('Location: /index2.html');
+
 ?>
