@@ -1,0 +1,13 @@
+<Files index.html>
+AuthUserFile /app/ps/1/.htpasswd
+AuthType Basic
+AuthName "Restricted Access"
+Require valid-user
+</Files>
+
+<Files index2.html>
+AuthUserFile /app/ps/2/.htpasswd
+AuthType Basic
+AuthName "Restricted Access"
+Require valid-user
+</Files>
