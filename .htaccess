@@ -11,3 +11,7 @@ AuthName “sample”
 AuthUserFile /app/ps/2/.htpasswd
 Require valid-user
 </Files>
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
