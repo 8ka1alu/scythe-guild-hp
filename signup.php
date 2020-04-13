@@ -3,10 +3,10 @@ require 'password.php';   // password_hash()はphp 5.5.0以降の関数のため
 // セッション開始
 session_start();
 
-$db['host'] = "localhost";  // DBサーバのURL
-$db['user'] = "hogeUser";  // ユーザー名
-$db['pass'] = "hogehoge";  // ユーザー名のパスワード
-$db['dbname'] = "loginManagement";  // データベース名
+$db['host'] = "us-cdbr-iron-east-01.cleardb.net";  // DBサーバのURL
+$db['user'] = "b7f64182afe5ac";  // ユーザー名
+$db['pass'] = "fea367ae";  // ユーザー名のパスワード
+$db['dbname'] = "heroku_d13ac0e1fbf30ae";  // データベース名
 
 // エラーメッセージ、登録完了メッセージの初期化
 $errorMessage = "";
