@@ -1,15 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ログイン</title>
+</head>
 <body>
-  <h1>パスワードを入力してください</h1>
-  <form name="pwform" onsubmit="return false;">
-
-    <!--　パスワードを入力する -->
-    <input type="password" name="txtb" value="">
-
-    <!--　送信したらjavascriptのtbox()の中身が動く -->
-    <input type="button" value="送信" onclick="tbox()">
-
-　　　　　　　　<!--　送信したらjavascriptのclr()の中身が動く -->
-    <input type="button" value="リセット" onclick="clr()">
-
-  </form>
-<body>
+<form method="POST" action="dologin.html">
+ Username: <input type="text" name="httpd_username" value="" /><br />
+ Password: <input type="password" name="httpd_password" value="" />
+ <button type="submit" name="login" value="Login">Login</button>
+</form>
+</body>
