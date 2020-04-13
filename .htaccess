@@ -1,5 +1,5 @@
 <Files index.html>
-AuthType form
+AuthType Basic
 AuthName “sample”
 AuthUserFile /app/ps/1/.htpasswd
 Require valid-user
