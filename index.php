@@ -1,6 +1,6 @@
 <?php
 
-header('Location: /login.html');
+header('Location: /index2.html');
 
 header('Location: /index.html');
 
