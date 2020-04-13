@@ -48,7 +48,7 @@ if (isset($_POST["login"])) {
                         $row['name'];  // ユーザー名
                     }
                     $_SESSION["NAME"] = $row['name'];
-                    header("Location: Main.php");  // メイン画面へ遷移
+                    header("Location: /main.php");  // メイン画面へ遷移
                     exit();  // 処理終了
                 } else {
                     // 認証失敗
@@ -89,7 +89,7 @@ if (isset($_POST["login"])) {
             </fieldset>
         </form>
         <br>
-        <form action="SignUp.php">
+        <form action="signup.php">
             <fieldset>          
                 <legend>新規登録フォーム</legend>
                 <input type="submit" value="新規登録">
