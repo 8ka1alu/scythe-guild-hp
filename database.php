@@ -1,7 +1,7 @@
 <?php
 // ログイン処理
 function login($email, $password){
-  $db = new PDO('mysql:host='us-cdbr-iron-east-01.cleardb.net';dbname='heroku_d13ac0e1fbf30ae, b7f64182afe5ac, fea367ae);
+  $db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS);
   $db->query('SET NAMES utf8');
   $sql = "SELECT *  FROM accounts  WHERE email = :email AND  password = :password";
   $stt = $db->prepare($sql);
@@ -20,7 +20,7 @@ function login($email, $password){
 }
 // ログイン認証
 function authCheck($email, $password){
-  $db = new PDO('mysql:host='us-cdbr-iron-east-01.cleardb.net';dbname='heroku_d13ac0e1fbf30ae, b7f64182afe5ac, fea367ae);
+  $db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS);
   $db->query('SET NAMES utf8');
   $sql = "SELECT * FROM accounts WHERE email = :email AND password = :password ";
   $stt = $db->prepare($sql);
