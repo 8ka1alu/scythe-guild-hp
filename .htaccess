@@ -32,4 +32,4 @@ AuthType form
 AuthName "realm"
 Session On
 SessionCookieName session path=/app/
-SessionCryptoPassphrase hogehoge
+SessionCryptoPassphrase iymLrU1xWyAcJOv035PC0Gd
