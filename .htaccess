@@ -11,25 +11,3 @@ AuthName “sample”
 AuthUserFile /app/ps/2/.htpasswd
 Require valid-user
 </Files>
-
-<Files "dologin.html">
-SetHandler form-login-handler
-AuthFormLoginSuccessLocation /app/ok.html
-SessionMaxAge 600
-</Files>
-<Files "dologout.html">
-SetHandler form-logout-handler
-AuthFormLogoutLocation "/app/logout.html"
-SessionMaxAge 1
-</Files>
-<FilesMatch "^(?!login.html).*">
-require valid-user
-</FilesMatch>
-AuthFormProvider file
-AuthFormLoginRequiredLocation /app/login.html
-AuthUserFile /app/ps/1/.htpasswd
-AuthType form
-AuthName "realm"
-Session On
-SessionCookieName session path=/app/
-SessionCryptoPassphrase iymLrU1xWyAcJOv035PC0Gd
