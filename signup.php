@@ -43,7 +43,7 @@ if (isset($_POST["signUp"])) {
             $signUpMessage = '登録が完了しました。あなたの登録IDは '. $userid. ' です。パスワードは '. $password. ' です。';  // ログイン時に使用するIDとパスワード
         } catch (PDOException $e) {
             $errorMessage = 'データベースエラー';
-            $e->getMessage() //でエラー内容を参照可能（デバッグ時のみ表示）
+            $e->getMessage(); //でエラー内容を参照可能（デバッグ時のみ表示）
             echo $e->getMessage();
         }
     } else if($_POST["password"] != $_POST["password2"]) {
