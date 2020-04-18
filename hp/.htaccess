@@ -5,4 +5,7 @@ AuthGroupFile /dev/null
 AuthName "temple"
 AuthType Basic
 require valid-user
+<FilesMatch logout*>
+Header unset Authorization
+</FilesMatch>
 </Files>
