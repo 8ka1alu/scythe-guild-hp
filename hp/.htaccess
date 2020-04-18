@@ -1,5 +1,5 @@
 <Files temple.php>
-AuthUserFile app/pw/temple/.htpasswd
+AuthUserFile app/ps/temple/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Member Only"
 AuthType Basic
