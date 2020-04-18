@@ -5,7 +5,7 @@ deny from all
 order deny,allow
 
 # パスワードページ(password.html)の場合
-<Files password.html>
+<Files hp/password.html>
 
 # 検索ボットの巡回を弾く設定
 SetEnvIf User-Agent "Googlebot" shutout
