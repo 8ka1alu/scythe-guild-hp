@@ -1,6 +1,6 @@
 
 <Files temple.html>
-AuthUserFile app/ps/temple/.htpasswd
+AuthUserFile /app/ps/temple/.htpasswd
 AuthGroupFile /dev/null
 AuthName "temple"
 AuthType Basic
