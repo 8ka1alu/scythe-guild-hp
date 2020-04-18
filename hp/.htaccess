@@ -1,7 +1,7 @@
-<Files temple.php>
+<Files temple.html>
 AuthUserFile app/ps/temple/.htpasswd
 AuthGroupFile /dev/null
-AuthName "Member Only"
+AuthName "temple"
 AuthType Basic
 require valid-user
 </Files>
